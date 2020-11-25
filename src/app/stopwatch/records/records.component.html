@@ -1,0 +1,12 @@
+<div class="record-wrapper">
+  <div class="record-item" *ngFor="let recordItem of recordList">
+    <div class="digit-layout">
+      <span>{{ recordItem | date: "mm" }}</span>
+      <span class="digit-separator">:</span>
+      <span>{{ recordItem | date: "ss" }}</span>
+      <span class="digit-separator">.</span>
+      <span>{{ recordItem | date: "SS" }}</span>
+    </div>
+    <button (click)="deleteRecord(recordItem)">Remove</button>
+  </div>
+</div>

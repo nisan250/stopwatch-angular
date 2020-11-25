@@ -1,0 +1,65 @@
+:host {
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.record-wrapper {
+  .record-item {
+    border-top: 2px solid #525252;
+    display: flex;
+    height: 42px;
+    justify-content: space-between;
+
+    &:hover {
+      button {
+        display: block;
+      }
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+
+    .digit-layout {
+      display: flex;
+      color: #fff;
+      font-family: "Digital";
+      font-size: 19px;
+      align-self: center;
+
+      span {
+        text-align: right;
+        width: 18px;
+      }
+
+      .digit-separator {
+        width: 4px;
+        margin: 0;
+        text-align: center;
+      }
+
+      span {
+        margin: 0 2px;
+      }
+    }
+
+    button {
+      background-color: #ff2218;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 12px;
+      font-weight: bold;
+      outline: none;
+      padding: 5px 6px;
+      text-transform: uppercase;
+      width: 70px;
+      align-self: center;
+
+      &:hover {
+        background-color: #e64a19;
+      }
+    }
+  }
+}

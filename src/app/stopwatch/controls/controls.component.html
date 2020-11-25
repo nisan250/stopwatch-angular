@@ -1,0 +1,16 @@
+<div class="controls-wrapper">
+  <button class="control-btn toggle-play" (click)="toggleCounter()">
+    <span *ngIf="!isCounting">
+      <i class="fa fa-play" aria-hidden="true"></i> <span>Play</span>
+    </span>
+    <span *ngIf="isCounting">
+      <i class="fa fa-pause" aria-hidden="true"></i> <span>Pause</span>
+    </span>
+  </button>
+  <button class="control-btn add" (click)="addRecord()" [disabled]="!isCounting">
+    <i class="fa fa-clock-o" aria-hidden="true"></i>
+  </button>
+  <button class="control-btn reset" (click)="resetCounter()">
+    <i class="fa fa-trash" aria-hidden="true"></i>
+  </button>
+</div>

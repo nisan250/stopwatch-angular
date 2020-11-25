@@ -1,0 +1,67 @@
+.controls-wrapper {
+  background-color: #fff;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  height: 35px;
+
+  .control-btn {
+    background-color: transparent;
+    border: none;
+    color: #3f3f3f;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: bold;
+
+    outline: none;
+    &:hover:not([disabled]) {
+      color: #ffc107;
+
+      i {
+        color: #ffc107;
+      }
+    }
+  }
+
+  .add {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    width: 64px;
+
+    &:disabled {
+      background: #928c8c;
+      cursor: not-allowed;
+    }
+
+    i {
+      font-size: 16px;
+      margin: auto;
+      color: #3f3f3f;
+    }
+  }
+
+  .reset {
+    border-radius: 0 0 10px 0;
+    width: 64px;
+
+    i {
+      font-size: 16px;
+      margin: auto;
+      color: #3f3f3f;
+    }
+  }
+
+  .toggle-play {
+    border-radius: 0 0 0 10px;
+    flex-grow: 1;
+    font-size: 15px;
+    > span {
+      margin: auto;
+    }
+
+    i {
+      font-size: 10px;
+      color: #3f3f3f;
+      margin-right: 4px;
+    }
+  }
+}

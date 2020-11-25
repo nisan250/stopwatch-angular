@@ -1,0 +1,6 @@
+<div class="stopwatch-wrapper">
+  <app-counter [currentCount]="time" [blink]="blink"></app-counter>
+  <app-controls [isCounting]="isCounting" (toggleCounterEvent)="handleToggleCounter()"
+    (addRecordEvent)="handleAddRecord()" (resetCounterEvent)="handleResetCounter()"></app-controls>
+  <app-records [recordList]="recordList" (deleteRecordEvent)="handleDeleteRecord($event)"></app-records>
+</div>

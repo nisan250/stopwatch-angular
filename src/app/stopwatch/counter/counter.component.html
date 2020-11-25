@@ -1,0 +1,16 @@
+<div class="counter-wrapper">
+  <div class="counter-timer counter-timer-bg digit-layout">
+    <span>88</span>
+    <span class="digit-separator">:</span>
+    <span>88</span>
+    <span class="digit-separator">.</span>
+    <span>88</span>
+  </div>
+  <div class="counter-timer digit-layout">
+    <span>{{ currentCount | date: "mm" }}</span>
+    <span class="digit-separator"><span *ngIf="blink">:</span></span>
+    <span>{{ currentCount | date: "ss" }}</span>
+    <span class="digit-separator"><span *ngIf="blink">.</span></span>
+    <span>{{ currentCount | date: "SS" }}</span>
+  </div>
+</div>
