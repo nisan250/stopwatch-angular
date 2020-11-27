@@ -7,10 +7,6 @@
     <span>88</span>
   </div>
   <div class="counter-timer digit-layout">
-    <span>{{ currentCount | date: "mm" }}</span>
-    <span class="digit-separator"><span *ngIf="blink">:</span></span>
-    <span>{{ currentCount | date: "ss" }}</span>
-    <span class="digit-separator"><span *ngIf="blink">.</span></span>
-    <span>{{ currentCount | date: "SS" }}</span>
+    <app-time-char [date]="currentCount"></app-time-char>
   </div>
 </div>

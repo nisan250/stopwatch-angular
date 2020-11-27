@@ -1,0 +1,21 @@
+.digit {
+  width: 16px;
+  display: inline-block;
+  text-align: right;
+}
+
+.digit-separator {
+  width: 18px;
+  display: inline-block;
+  text-align: center;
+}
+
+.small {
+  .digit {
+    width: 9px;
+  }
+
+  .digit-separator {
+    width: 8px;
+  }
+}

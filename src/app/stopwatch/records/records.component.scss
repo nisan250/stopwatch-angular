@@ -1,9 +1,13 @@
 :host {
-  overflow: auto;
+  overflow: hidden;
   margin: 10px 0;
+  flex: 1;
 }
 
 .record-wrapper {
+  overflow: auto;
+  height: 100%;
+
   .record-item {
     border-top: 2px solid #525252;
     display: flex;

@@ -1,8 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.scss'],
 })
