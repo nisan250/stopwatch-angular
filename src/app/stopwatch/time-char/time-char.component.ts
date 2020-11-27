@@ -9,7 +9,7 @@ import { DatePipe } from '@angular/common';
 export class TimeCharComponent implements OnChanges {
   @Input() small: boolean;
   @Input() date: number;
-
+  @Input() blink: boolean;
   minutes: string[];
   seconds: string[];
   msec: string[];

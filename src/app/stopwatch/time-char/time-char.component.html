@@ -1,10 +1,10 @@
 <div class="digit-layout" [ngClass]="{'small' : small}">
   <span class="digit">{{ this.minutes[0] }}</span>
   <span class="digit">{{ this.minutes[1] }}</span>
-  <span class="digit-separator">:</span>
+  <span class="digit-separator"><span *ngIf="blink">:</span></span>
   <span class="digit">{{ this.seconds[0] }}</span>
   <span class="digit">{{ this.seconds[1] }}</span>
-  <span class="digit-separator">.</span>
+  <span class="digit-separator"><span *ngIf="blink">.</span></span>
   <span class="digit">{{ this.msec[0] }}</span>
   <span class="digit">{{ this.msec[1] }}</span>
 </div>
