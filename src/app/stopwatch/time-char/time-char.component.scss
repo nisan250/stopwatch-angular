@@ -1,13 +1,17 @@
-.digit {
-  width: 16px;
-  display: inline-block;
-  text-align: right;
-}
+.digit-layout {
+  display: flex;
 
-.digit-separator {
-  width: 18px;
-  display: inline-block;
-  text-align: center;
+  .digit {
+    width: 16px;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  .digit-separator {
+    width: 18px;
+    display: inline-flex;
+    justify-content: center;
+  }
 }
 
 .small {
