@@ -1,4 +1,4 @@
-<div class="record-wrapper">
+<div class="record-wrapper" #recordsEl>
   <div class="record-item" *ngFor="let recordItem of recordList">
     <div class="digit-layout">
       <app-time-char [date]="recordItem" [small]="true" [blink]="true"></app-time-char>

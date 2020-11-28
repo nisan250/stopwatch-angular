@@ -62,7 +62,7 @@ export class ShellComponent implements OnInit {
 
   handleAddRecord(): void {
     if (this.isCounting) {
-      this.recordList.push(this.time);
+      this.recordList = [...this.recordList, this.time];
       this.stopwatchService.saveState(this.time, this.recordList);
     }
   }
